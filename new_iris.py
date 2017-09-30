@@ -3,7 +3,7 @@ import numpy as np
 
 """ Creates a bigger iris data set. Randomizes the features in a class of iris.
     Interesting to see how this will train a model compared to the original data
-    set.  Could use the original data set as the test data. 
+    set.   
     
     You will need the iris data file."""
 
