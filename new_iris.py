@@ -3,7 +3,7 @@ import numpy as np
 
 """ Creates a bigger iris data set. Randomizes the features in a class of iris.
     Interesting to see how this will train a model compared to the original data
-    set.  Could use the original data set as the test data. 
+    set.   
     
     You will need the iris data file."""
 
@@ -11,6 +11,7 @@ import numpy as np
 np.random.seed(23)
 
 def create_arrays():
+    """ Load datae and create dataframes for each species. """
     file = '/home/filepath/Iris.csv'
     df = pd.read_csv(file)
     df_setosa = df[(df.Species == 'Iris-setosa')]
@@ -65,4 +66,4 @@ data_set = np.concatenate((setosa_data, versicolor_data, virginica_data), axis=0
 
 data_set = random_data(data_set)
 write_new_data(data_set)
-print(data_set)
+
