@@ -1,4 +1,4 @@
-
+# Built on Python 3.6.5 on Linux
 from pathlib import Path
 
 import pandas as pd
@@ -8,6 +8,7 @@ def get_list(file_list):
         characteristics of the file."""
     
     df = pd.read_csv(file_list)
+    
     return df
 
 def clean_options(df, path_column):
