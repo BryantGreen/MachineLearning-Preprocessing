@@ -8,11 +8,11 @@ import numpy as np
     You will need the iris data file."""
 
 #Optional
-np.random.seed(23)
+np.random.seed(22)
 
 def create_arrays():
-    """ Load datae and create dataframes for each species. """
-    file = '/home/filepath/Iris.csv'
+    """ Load data and create dataframes for each species. """
+    file = 'Iris.csv'
     df = pd.read_csv(file)
     df_setosa = df[(df.Species == 'Iris-setosa')]
     df_versicolor = df[(df.Species == 'Iris-versicolor')]

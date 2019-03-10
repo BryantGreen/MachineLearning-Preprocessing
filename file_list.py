@@ -53,7 +53,7 @@ def create_file(results):
 
 if __name__=='__main__':
     # Define some variables.
-    file_list = Path('/home/willy/dwfiles/file_list.csv')
+    file_list = Path('/file/path/dwfiles/file_list.csv')
     path_column = 'path'
     # Read the file with the column of file paths to test.
     df = get_list(file_list)

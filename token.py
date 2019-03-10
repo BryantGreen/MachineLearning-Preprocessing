@@ -1,16 +1,14 @@
-#!/usr/bin/env python3
 
-from keras.preprocessing.text import Tokenizer
+import tensorflow as tf
 
-#def read_file(file):
-file =  '/home/willy/gen1'   
+file =  'gen1' # Sample text file   
 txt = open(file).read()
 # Create a word list
 txt = txt.split()
 
 print(txt) #test
     
-tokenizer = Tokenizer(num_words=1000)        
+tokenizer = tf.keras.preprocessing.text.Tokenizer(num_words=1000)        
 tokenizer.fit_on_texts(txt)
 print(tokenizer)
 
